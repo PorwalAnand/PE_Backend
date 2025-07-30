@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pymongo
+python-dotenv
+openai
+anthropic
+google-generativeai
+mistralai
+python-multipart
+tiktoken
