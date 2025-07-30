@@ -14,7 +14,7 @@ services:
       - key: MONGO_URI            # set in Render dashboard as a Secret
         sync: false
       - key: MONGO_DB
-        value: PO_Agent
+        value: prompt_library
       - key: OPENAI_API_KEY       # secrets set in dashboard
         sync: false
       - key: ANTHROPIC_API_KEY
