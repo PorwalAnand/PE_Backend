@@ -19,7 +19,7 @@ from app.utils import calculate_cost
 from app.models import ModelComparisonRequest, ModelComparisonResponse, ComparisonResult, ModelSettings
 
 router = APIRouter()
-UPLOAD_DIR = "uploaded_files"
+UPLOAD_DIR = os.getenv("UPLOAD_DIR", "/tmp/uploads")  # <— works locally & on Render
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 
 class LLMRequest(BaseModel):
